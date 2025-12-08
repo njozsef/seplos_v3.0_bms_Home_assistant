@@ -26,3 +26,9 @@ A HACS dashboard extension nélkül is működik, de akkor nem működik a megje
 A DIP kapcsoló 1-es kapcsolóját fel (on)
 
 
+boardok:
+https://www.aliexpress.com/item/1005006862681936.html
+<img width="164" height="222" alt="image" src="https://github.com/user-attachments/assets/cc999876-801e-4294-accd-adeab7e2bc6c" />
+https://www.aliexpress.com/item/1005006027343580.html
+<img width="403" height="163" alt="image" src="https://github.com/user-attachments/assets/ed812228-93c5-492d-b8a6-510a57a193f3" />
+
