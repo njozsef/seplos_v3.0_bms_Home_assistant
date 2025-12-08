@@ -3,8 +3,8 @@ substitutions:
   name: battery-monitor
   battery_bank0: "battery bank 0"  #ha változtatod akkor a lambdás c++ kódban is át kell írni, mert nem veszi át. (és az id: -ket is)
   device_description: "Monitor and control a Seplos V3 BMS via RS485 (Modbus)"
-  tx_pin: GPIO9        #8 (a kínai szaron a tx/rx fel van cserélve) (az esp tx-tx    esp rx-rx)
-  rx_pin: GPIO8        #9 (ezzel szopattam magam 2 napig)
+  tx_pin: GPIO9        #8 (a kínai rs485 boardon a tx/rx fel van cserélve) (az esp tx-tx    esp rx-rx)
+  rx_pin: GPIO8        #9 
   led_pin: GPIO21      # ha nem a kínai RGB led-es verziód van akkor a light szekciót át kell írni vagy ki kell szedni.
 
 esphome:
@@ -30,10 +30,10 @@ esp32:
     type: esp-idf
 
 wifi:
-#  ssid: "admin"
+#  ssid: "admin"                   (fixen is be lehet írni az ssid-t / jeészót)
 #  password: "12345678"
   ap:
-    ssid: "Sluxer BMS AP"
+    ssid: "Sluxer16 BMS AP"
     password: ""
 
   on_connect:
@@ -66,11 +66,11 @@ interval:
 # Enable Home Assistant API
 api:
   encryption:
-    key: "KRwYlB22lP/CaOMZx2cfKEr7qYgKfk2Rd4RqzOkhlOM="
+    key: "saját key-t másold ide"
 
 ota:
   - platform: esphome
-    password: "c18323f0b2283f74ae7dbc89773312c1"
+    password: "saját jelszót használd itt"
 
 
 
