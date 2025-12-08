@@ -20,13 +20,8 @@ Home Assistant
 
 A HACS dashboard extension nélkül is működik, de akkor nem működik a megjelenítés csak az adatok jönnek.
 
-huzalozás:
----------          _________________________________________                                      ____________________
-      |--3.3V-----| 3.3V                                    |                                    |
-esp32 |--TX-------|  TX!        RS485 konverter           A+|------UTP narancs-------------------|   BMS 485-1 csatlakozó
-      |--RX-------|  RX!                                  B-|------UTP narancs-fehér-------------|       (középső)
-      |----GND----|  GND                                    |                                    |
-                  ------------------------------------------                                      --------------------
+<img width="849" height="169" alt="image" src="https://github.com/user-attachments/assets/62929718-31c4-4333-8f71-51d26158103c" />
+
 
 A DIP kapcsoló 1-es kapcsolóját fel (on)
 
