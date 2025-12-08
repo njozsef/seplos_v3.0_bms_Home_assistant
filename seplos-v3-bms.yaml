@@ -5,7 +5,7 @@ substitutions:
   device_description: "Monitor and control a Seplos V3 BMS via RS485 (Modbus)"
   tx_pin: GPIO9        #8 (a kínai szaron a tx/rx fel van cserélve) (az esp tx-tx    esp rx-rx)
   rx_pin: GPIO8        #9 (ezzel szopattam magam 2 napig)
-  led_pin: GPIO21
+  led_pin: GPIO21      # ha nem a kínai RGB led-es verziód van akkor a light szekciót át kell írni vagy ki kell szedni.
 
 esphome:
   name: ${name}
@@ -25,7 +25,7 @@ esphome:
           transition_length: 0s
 
 esp32:
-  board: esp32-s3-devkitc-1
+  board: esp32-s3-devkitc-1            #esp32 s3
   framework:
     type: esp-idf
 
