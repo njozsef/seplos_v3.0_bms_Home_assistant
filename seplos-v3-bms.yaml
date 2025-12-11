@@ -250,7 +250,10 @@ sensor:
     value_type: U_WORD
     unit_of_measurement: "%"
     state_class: measurement
-    accuracy_decimals: 0
+    accuracy_decimals: 2
+    accuracy_decimals: 2
+    filters:
+      - multiply: 0.1  # Nyers /10 = 0.1% → %       
 
   # 1007    Cycle                       R    UINT16    2    1
   - platform: modbus_controller
